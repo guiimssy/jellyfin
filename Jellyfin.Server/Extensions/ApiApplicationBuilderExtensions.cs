@@ -44,7 +44,7 @@ namespace Jellyfin.Server.Extensions
                 })
                 .UseSwaggerUI(c =>
                 {
-                    c.DocumentTitle = "Jellyfin API";
+                    c.DocumentTitle = "GStream API";
                     c.SwaggerEndpoint($"/{baseUrl}api-docs/openapi.json", "Jellyfin API");
                     c.InjectStylesheet($"/{baseUrl}api-docs/swagger/custom.css");
                     c.RoutePrefix = "api-docs/swagger";
